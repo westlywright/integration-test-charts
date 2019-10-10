@@ -3,7 +3,6 @@
 {{- if .Values.ingress.enabled }}
 ---
 apiVersion: extensions/v1beta1
-test: false
 kind: Ingress
 metadata:
   name: {{ include "chartmuseum.fullname" . }}
